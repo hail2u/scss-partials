@@ -25,6 +25,21 @@ USAGE
 
 `$yui-10px`から`$yui-26px`まで定義されています。
 
+### \_speech-bubble.scss
+
+吹き出しのデザインを変更することができます。
+
+    .speech-bubble {
+      @include speech-bubble(#9cf, 6px, 12px, $24px);
+    }
+
+#### 引数
+
+  1. `$bgcolor`: 背景及び吹き出しの尻尾の色
+  2. `$round-size`: 吹き出しの四隅の丸さ
+  3. `$tail-size`: 吹き出しのサイズ
+  4. `$tail-position`: 吹き出しの位置
+
 
 LICENSE
 -------
