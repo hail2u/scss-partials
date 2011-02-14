@@ -1,4 +1,4 @@
-@mixin speech-bubble($bgcolor, $round-size, $tail-size, $tail-position) {
+@mixin speech-bubble($bgcolor: #9cf, $round-size: 6px, $tail-size: 12px, $tail-position: 24px) {
   position: relative;
   background-color: $bgcolor;
   -moz-border-radius: $round-size;
