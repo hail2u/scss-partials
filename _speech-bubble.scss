@@ -1,0 +1,23 @@
+@mixin speech-bubble($bgcolor, $round-size, $tail-size, $tail-position) {
+  position: relative;
+  background-color: $bgcolor;
+  -moz-border-radius: $round-size;
+  -webkit-border-radius: $round-size;
+  border-radius: $round-size;
+
+  &:before {
+    border-top-width: $tail-size;
+    border-right-width: $tail-size;
+    border-bottom-width: 0;
+    border-left-width: $tail-size;
+    border-color: $bgcolor transparent;
+    border-style: solid;
+    display: block;
+    position: absolute;
+    bottom: -$tail-size;
+    left: $tail-position;
+    width: 0;
+    height: 0;
+    content: "";
+  }
+}
