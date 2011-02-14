@@ -1,0 +1,9 @@
+@import "speech-bubble";
+
+.speech-bubble {
+  @include speech-bubble(#9cf, 6px, 12px, 24px);
+
+  padding: 1em;
+  width: 360px;
+  color: #000;
+}

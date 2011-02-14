@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Test for SCSS Partials</title>
+    <link rel="stylesheet" href="test.css">
+  </head>
+  <body>
+    <h1>Test for SCSS Partials</h1>
+    <h2>Speech Bubble</h2>
+    <p class="speech-bubble">Pure CSS Speech Bubble Test.</p>
+    <pre>
+@import "speech-bubble";
+
+.speech-bubble {
+  @include speech-bubble(#9cf, 6px, 12px, 24px);
+
+  padding: 1em;
+  width: 360px;
+  color: #000;
+}
+</pre>
+  </body>
+</html>
