@@ -15,16 +15,6 @@ USAGE
 拡張子とファイル名の先頭の`_`は不要です。
 
 
-### \_yui-fonts-min.scss
-
-インポートしたドキュメントで変数を使ってフォントサイズの変更が行えます。
-
-    h1 {
-      font-size: $yui-24px;
-    }
-
-`$yui-10px`から`$yui-26px`まで定義されています。
-
 ### \_speech-bubble.scss
 
 吹き出しのデザインを変更することができます。
@@ -39,6 +29,37 @@ USAGE
   2. `$round-size`: 吹き出しの四隅の丸さ
   3. `$tail-size`: 吹き出しのサイズ
   4. `$tail-position`: 吹き出しの位置
+
+
+### \_vendor-extension.scss
+
+ベンダー拡張プロパティとCSS3でのプロパティを一括指定することができます。
+
+  * background-origin
+  * background-size
+  * border-radius
+  * box-shadow
+  * box-sizing
+  * transform
+  * transform-origin
+  * transition
+  * transition-property
+  * transition-duration
+  * transition-function
+  * transition-delay
+
+値の指定はCSS3の仕様に従います。
+
+
+### \_yui-fonts-min.scss
+
+インポートしたドキュメントで変数を使ってフォントサイズの変更が行えます。
+
+    h1 {
+      font-size: $yui-24px;
+    }
+
+`$yui-10px`から`$yui-26px`まで定義されています。
 
 
 LICENSE
