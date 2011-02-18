@@ -45,7 +45,7 @@
   transform-origin: $origin;
 }
 
-@mixin transition($transtion) {
+@mixin transition($transition) {
   -moz-transition: $transition;
   -webkit-transition: $transition;
   -o-transition: $transition;
