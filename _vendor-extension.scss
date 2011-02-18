@@ -45,11 +45,11 @@
   transform-origin: $origin;
 }
 
-@mixin transition($transtion) {
-  -moz-transition: $transition;
-  -webkit-transition: $transition;
-  -o-transition: $transition;
-  transition: $transition;
+@mixin transition($property: all, $duration: 0, $function: ease, $delay 0) {
+  -moz-transition: $property, $duration, $function, $delay;
+  -webkit-transition: $property, $duration, $function, $delay;
+  -o-transition: $property, $duration, $function, $delay;
+  transition: $property, $duration, $function, $delay;
 }
 
 @mixin transition-property($property) {
