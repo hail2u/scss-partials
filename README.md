@@ -15,6 +15,44 @@ USAGE
 拡張子とファイル名の先頭の`_`は不要です。
 
 
+### \_clearfix.scss
+
+clearfixを簡単に利用することができます。
+
+    header {
+      @include clearfix;
+    }
+
+
+### \_emboss.scss
+
+`text-shadow`による軽いエンボスを手軽にかけることができます。
+
+   h1 {
+     @include black-emboss();
+   }
+
+
+### \_meyerweb-reset.scss
+
+[meyerwebで公開されているReset CSS](http://meyerweb.com/eric/tools/css/reset/)をインポートすることができます。
+
+
+### \_natural.scss
+
+[結局どうすればいいの？ - Dive Into HTML5](http://hail2u.net/documents/diveintohtml5-semantics.html)などで使われているシンプルなスタイルをインポートすることができます。文字や背景、リンクなどの色やフォントサイズ等の設定を変更することも可能です。
+
+    $link: green;
+    $font-size: 12px;
+
+    @import "natural";
+
+
+### \_reset.scss
+
+[hail2u.net](http://hail2u.net/)で使用しているリセットCSｓをインポートすることができます。
+
+
 ### \_speech-bubble.scss
 
 吹き出しのデザインを変更することができます。
@@ -29,6 +67,11 @@ USAGE
   2. `$round-size`: 吹き出しの四隅の丸さ
   3. `$tail-size`: 吹き出しのサイズ
   4. `$tail-position`: 吹き出しの位置
+
+
+### \_vanilla.scss
+
+[Vanilla CSS Un-Reset](http://noscope.com/vanilla-css)をインポートすることができます。
 
 
 ### \_vendor-extension.scss
@@ -51,15 +94,25 @@ USAGE
 値の指定はCSS3の仕様に従います。
 
 
+### \_yui-base-min.scss
+
+[YUI 3のCSS Base](http://developer.yahoo.com/yui/3/cssbase/)をインポートすることができます。
+
+
 ### \_yui-fonts-min.scss
 
-インポートしたドキュメントで変数を使ってフォントサイズの変更が行えます。
+[YUI 3のCSS Fonts](http://developer.yahoo.com/yui/3/cssfonts/)をインポートすることができます。インポートしたドキュメントでは変数を使ってフォントサイズの変更が行えます。
 
     h1 {
       font-size: $yui-24px;
     }
 
 `$yui-10px`から`$yui-26px`まで定義されています。
+
+
+### \_yui-reset-min.scss
+
+[YUI 3のCSS Reset](http://developer.yahoo.com/yui/3/cssreset/)をインポートすることができます。
 
 
 LICENSE
