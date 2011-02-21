@@ -1,0 +1,172 @@
+@charset "UTF-8";
+
+@import "reset";
+
+$dark:       black !default;
+$light:      white !default;
+$link:       blue !default;
+$stress:     red !default;
+$font-size:  15px !default;
+$sans-serif: "Verdana", sans-serif !default;
+$monospace:  "Menlo", "Consolas", "DejaVu Sans Mono", monospace !default;
+
+body {
+  color: $dark;
+  background-color: $light;
+  font: #{$font-size}/1.75 $sans-serif;
+}
+
+a {
+  color: $link;
+}
+
+em {
+  font-style: normal;
+  font-weight: bold;
+}
+
+strong {
+  color: $stress;
+  font-weight: bold;
+}
+
+code, samp, var {
+  font-family: $monospace;
+}
+
+abbr, acronym {
+  border-bottom: 1px dotted $dark;
+  cursor: help;
+}
+
+q:before {
+  content: "\201C\0020";
+}
+
+q:after {
+  content: "\0020\201D";
+}
+
+ins {
+  border-bottom: 3px double lighten($dark, 15%);
+  text-decoration: none;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: text-bottom;
+  box-sizing: border-box;
+}
+
+h1 {
+  margin: ($font-size * 2) 0;
+  font-size: 250%;
+}
+
+h2 {
+  margin: ($font-size * 2) 0;
+  font-size: 200%;
+}
+
+h3 {
+  margin: ($font-size * 2) 0;
+  font-size: 180%;
+}
+
+h4 {
+  margin: ($font-size * 2) 0;
+  font-size: 160%;
+}
+
+h5 {
+  margin: ($font-size * 2) 0;
+  font-size: 140%;
+}
+
+h6 {
+  margin: ($font-size * 2) 0;
+  font-size: 120%;
+}
+
+p {
+  margin: ($font-size * 2) 0;
+}
+
+pre {
+  margin: ($font-size * 2) 0;
+  padding: $font-size;
+  line-height: 1.25;
+  background-color: darken($light, 3%);
+  font-family: $monospace;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+blockquote {
+  margin: ($font-size * 2) ($font-size * 2.5);
+}
+
+dl {
+  margin-left: ($font-size * 2.5);
+
+  dt {
+    margin: ($font-size * 2) 0;
+    font-weight: bold;
+  }
+
+  dd {
+    margin: ($font-size * 2) 0;
+  }
+}
+
+ul, ol {
+  margin: ($font-size * 2) 0;
+
+  ul, ol {
+    margin: 0;
+  }
+
+  li {
+    margin-left: ($font-size * 2.5);
+    list-style-type: inherit;
+  }
+}
+
+table {
+  margin: ($font-size * 2) 0;
+  border-bottom: 1px solid darken($light, 45%);
+  border-left: 1px solid darken($light, 45%);
+  border-collapse: separate;
+
+  th {
+    padding: ($font-size / 2);
+    border-top: 1px solid darken($light, 45%);
+    border-right: 1px solid darken($light, 45%);
+    color: $dark;
+    background-color: darken($light, 15%);
+    font-weight: bold;
+    text-align: left;
+  }
+
+  td {
+    padding: ($font-size / 2);
+    border-top: 1px solid darken($light, 45%);
+    border-right: 1px solid darken($light, 45%);
+    color: $dark;
+    background-color: darken($light, 3%);
+  }
+}
+
+hr {
+  margin: ($font-size * 2) auto;
+  border-top: none;
+  border-right: none;
+  border-bottom: 3px double darken($light, 30%);
+  border-left: none;
+  width: 50%;
+  height: 0;
+}
