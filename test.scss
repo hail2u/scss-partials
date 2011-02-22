@@ -7,3 +7,11 @@
   width: 360px;
   color: #000;
 }
+
+.bordered-speech-bubble {
+  @include bordered-speech-bubble(#9cf, #369, 4px, 8px, 16px, 24px);
+
+  padding: 1em;
+  width: 360px;
+  color: #000;
+}

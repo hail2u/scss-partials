@@ -8,12 +8,25 @@
   <body>
     <h1>Test for SCSS Partials</h1>
     <h2>Speech Bubble</h2>
-    <p class="speech-bubble">Pure CSS Speech Bubble Test.</p>
+    <p class="speech-bubble">Pure CSS speech bubble test.</p>
     <pre>
 @import "speech-bubble";
 
 .speech-bubble {
   @include speech-bubble(#9cf, 6px, 12px, 24px);
+
+  padding: 1em;
+  width: 360px;
+  color: #000;
+}
+</pre>
+    <h2>Bordered Speech Bubble</h2>
+    <p class="bordered-speech-bubble">Pure CSS bordered speech bubble test.</p>
+    <pre>
+@import "speech-bubble";
+
+.bordered-speech-bubble {
+  @include bordered-speech-bubble(#9cf, #369, 4px, 8px, 16px, 24px);
 
   padding: 1em;
   width: 360px;
