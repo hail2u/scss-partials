@@ -21,3 +21,44 @@
     content: "";
   }
 }
+
+@mixin bordered-speech-bubble($background-color: #9cf, $border-color: #369, $border-size: 4px, $round-size: 8px, $tail-size: 16px, $tail-position: 16px) {
+  border: $border-size solid $border-color;
+  position: relative;
+  background-color: $background-color;
+  -moz-border-radius: $round-size;
+  -webkit-border-radius: $round-size;
+  border-radius: $round-size;
+
+  &:before {
+    border-top-width: $tail-size;
+    border-right-width: $tail-size;
+    border-bottom-width: 0;
+    border-left-width: $tail-size;
+    border-color: $border-color transparent;
+    border-style: solid;
+    display: block;
+    position: absolute;
+    bottom: (- $tail-size);
+    left: $tail-position;
+    width: 0;
+    height: 0;
+    content: "";
+  }
+
+  &:after {
+    border-top-width: $tail-size;
+    border-right-width: $tail-size;
+    border-bottom-width: 0;
+    border-left-width: $tail-size;
+    border-color: $background-color transparent;
+    border-style: solid;
+    display: block;
+    position: absolute;
+    bottom: (- $tail-size + $border-size * 1.5);
+    left: $tail-position;
+    width: 0;
+    height: 0;
+    content: "";
+  }
+}
