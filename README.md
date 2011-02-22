@@ -61,6 +61,13 @@ clearfixを簡単に利用することができます。
       @include speech-bubble(#9cf, 6px, 12px, $24px);
     }
 
+枠線付きを作ることもできます。
+
+    .bordered-speech-bubble {
+      @include bordered-speech-bubble(#9cf, #369, 4px, 8px, 16px, $24px);
+    }
+
+
 #### 引数
 
   1. `$bgcolor`: 背景及び吹き出しの尻尾の色
