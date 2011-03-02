@@ -107,15 +107,13 @@ blockquote {
 }
 
 dl {
-  margin-left: ($font-size * 2.5);
-
   dt {
     margin: ($font-size * 2) 0;
     font-weight: bold;
   }
 
   dd {
-    margin: ($font-size * 2) 0;
+    margin: ($font-size * 2) 0 ($font-size * 2) ($column + $gutter);
   }
 }
 
