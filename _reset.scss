@@ -49,6 +49,7 @@ caption, th {
 }
 
 hr {
+  -moz-box-sizing: content-box;
   box-sizing: content-box;
   height: 1px;
 }
