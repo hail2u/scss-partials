@@ -12,7 +12,7 @@ output, ruby, section, summary, time, mark, audio, video {
   font-size: 100%;
 }
 
-article, aside, details, figcaption, figure, footer, header, hgroup, 
+article, aside, details, figcaption, figure, footer, header, hgroup,
 menu, nav, section {
   display: block;
 }
@@ -46,5 +46,9 @@ li {
 
 caption, th {
   text-align: left;
+}
+
+hr {
+  box-sizing: content-box;
 }
 /* end */
