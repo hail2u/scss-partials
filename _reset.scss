@@ -34,8 +34,9 @@ table {
   border-spacing: 0;
 }
 
-address, caption, cite, code, dfn, em, strong, th, var, h1, h2, h3, h4,
-h5, h6 {
+address, caption, cite, code, dfn, em, strong, th, h1, h2, h3, h4, h5,
+h6, input, select, textarea {
+  font-family: inherit;
   font-style: inherit;
   font-weight: inherit;
 }
