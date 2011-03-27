@@ -1,4 +1,11 @@
+@charset "UTF-8";
+
+@import "reset";
 @import "natural";
+
+body {
+  margin: 0 ($font-size * 4);
+}
 
 @import "speech-bubble";
 
