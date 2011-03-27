@@ -3,8 +3,8 @@ $light:      white !default;
 $link:       blue !default;
 $stress:     red !default;
 $font-size:  15px !default;
-$sans-serif: "Verdana", sans-serif !default;
-$monospace:  "Menlo", "Consolas", "DejaVu Sans Mono", monospace !default;
+$sans-serif: "Verdana", "Helvetica", "Arial", sans-serif !default;
+$monospace:  "Menlo", "DejaVu Sans Mono", "Andale Mono", monospace !default;
 
 body {
   color: $dark;
@@ -113,7 +113,7 @@ dl {
   }
 
   dd {
-    margin: ($font-size * 2) 0 ($font-size * 2) ($column + $gutter);
+    margin: ($font-size * 2) 0 ($font-size * 2) ($font-size * 2.5);
   }
 }
 
