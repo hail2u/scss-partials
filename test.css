@@ -32,7 +32,8 @@ address, caption, cite, code, dfn, em, strong, th, h1, h2, h3, h4, h5,
 h6, input, select, textarea {
   font-family: inherit;
   font-style: inherit;
-  font-weight: inherit; }
+  font-weight: inherit;
+  font-size: inherit; }
 
 li {
   list-style: none; }
