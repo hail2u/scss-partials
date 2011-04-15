@@ -44,7 +44,7 @@ clearfixを簡単に利用することができます。
 
     $link: green;
     $font-size: 12px;
-
+    
     @import "natural";
 
 
@@ -120,6 +120,21 @@ clearfixを簡単に利用することができます。
 ### \_yui-reset-min.scss
 
 [YUI 3のCSS Reset](http://developer.yahoo.com/yui/3/cssreset/)をインポートすることができます。
+
+
+### \_utils.scss
+
+その他単機能のミックスインをインポートすることができます。
+
+#### fake-aa
+
+CSS Transformの`rotate(360deg)`で軽くぼかしがかかることを利用して、Google Chromeでフォントがギザギザに見えることがある問題への対処を行います。
+
+    .fake-aa {
+      @include fake-aa;
+    
+      font-family: "MS PMincho", serif;
+    }
 
 
 LICENSE
