@@ -235,3 +235,8 @@ body {
     width: 0;
     height: 0;
     content: ""; }
+
+.fake-aa {
+  -webkit-transform: rotate(360deg);
+  font-family: "MS PMincho", serif;
+  font-size: 24px; }

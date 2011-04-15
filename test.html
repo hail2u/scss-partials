@@ -7,6 +7,7 @@
   </head>
   <body>
     <h1>Test for SCSS Partials</h1>
+
     <h2>Speech Bubble</h2>
     <p class="speech-bubble">Pure CSS speech bubble test.</p>
     <pre>
@@ -20,6 +21,7 @@
   color: #000;
 }
 </pre>
+
     <h2>Bordered Speech Bubble</h2>
     <p class="bordered-speech-bubble">Pure CSS bordered speech bubble test.</p>
     <pre>
@@ -31,6 +33,19 @@
   padding: 1em;
   width: 360px;
   color: #000;
+}
+</pre>
+
+    <h2>Fake Anti-Aliasing for Google Chrome</h2>
+    <p class="fake-aa">散りぬるを我が世誰ぞ常ならむ</p>
+    <pre>
+@import "utils";
+
+.fake-aa {
+  @include fake-aa;
+
+  font-family: "MS PMincho", serif;
+  font-size: 24px;
 }
 </pre>
   </body>

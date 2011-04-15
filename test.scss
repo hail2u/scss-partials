@@ -24,3 +24,12 @@ body {
   width: 360px;
   color: #000;
 }
+
+@import "utils";
+
+.fake-aa {
+  @include fake-aa;
+
+  font-family: "MS PMincho", serif;
+  font-size: 24px;
+}
