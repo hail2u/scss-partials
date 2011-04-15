@@ -1,0 +1,4 @@
+// Fake Anti-Alias for Google Chrome
+@mixin fake-aa {
+  -webkit-transform: rotate(360deg);
+}
