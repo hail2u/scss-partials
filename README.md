@@ -23,6 +23,12 @@ clearfixを簡単に利用することができます。
       @include clearfix;
     }
 
+IE6等のサポートが必要ないなら、生成されるコードがシンプルなminiclearfixを使用することもできます。
+
+    article {
+      @include miniclearfix;
+    }
+
 
 ### \_emboss.scss
 

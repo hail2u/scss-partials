@@ -13,3 +13,11 @@
     clear: both;
   }
 }
+
+@mixin miniclearfix {
+  &:after {
+    display: block; 
+    clear: both;
+    content: ""; 
+  }
+}
