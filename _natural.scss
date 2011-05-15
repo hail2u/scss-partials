@@ -4,9 +4,10 @@ $link:       blue !default;
 $stress:     red !default;
 $font-size:  15px !default;
 $sans-serif: "Verdana", "Helvetica", "Arial", sans-serif !default;
-$monospace:  "Menlo", "DejaVu Sans Mono", "Andale Mono", monospace !default;
+$monospace:  "Menlo", "Andale Mono", monospace !default;
 
 body {
+  margin: 30px;
   color: $dark;
   background-color: $light;
   font: #{$font-size}/1.75 $sans-serif;
