@@ -36,11 +36,11 @@ abbr, acronym {
   cursor: help;
 }
 
-q:before {
+q::before {
   content: "\201C\0020";
 }
 
-q:after {
+q::after {
   content: "\0020\201D";
 }
 

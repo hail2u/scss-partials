@@ -5,7 +5,7 @@
   -webkit-border-radius: $round-size;
   border-radius: $round-size;
 
-  &:before {
+  &::before {
     border-top-width: $tail-size;
     border-right-width: $tail-size;
     border-bottom-width: 0;
@@ -30,7 +30,7 @@
   -webkit-border-radius: $round-size;
   border-radius: $round-size;
 
-  &:before {
+  &::before {
     border-top-width: $tail-size;
     border-right-width: $tail-size;
     border-bottom-width: 0;
@@ -46,7 +46,7 @@
     content: "";
   }
 
-  &:after {
+  &::after {
     border-top-width: $tail-size;
     border-right-width: $tail-size;
     border-bottom-width: 0;
