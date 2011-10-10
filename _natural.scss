@@ -2,12 +2,12 @@ $dark:       black !default;
 $light:      white !default;
 $link:       blue !default;
 $stress:     red !default;
-$font-size:  15px !default;
+$font-size:  16px !default;
 $sans-serif: "Verdana", "Helvetica", "Arial", sans-serif !default;
 $monospace:  "Menlo", "Andale Mono", monospace !default;
 
 body {
-  margin: 30px;
+  margin: ($font-size * 2);
   color: $dark;
   background-color: $light;
   font: #{$font-size}/1.75 $sans-serif;
