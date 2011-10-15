@@ -3,7 +3,7 @@ $light:      white !default;
 $link:       blue !default;
 $stress:     red !default;
 $font-size:  16px !default;
-$sans-serif: "Verdana", "Helvetica", "Arial", sans-serif !default;
+$sans-serif: "Helvetica", "Arial", sans-serif !default;
 $monospace:  "Menlo", "Andale Mono", monospace !default;
 
 body {
@@ -164,4 +164,12 @@ hr {
   border-left: none;
   width: 50%;
   height: 0;
+}
+
+@media print {
+  * {
+    color: black !important;
+    background-color: transparent !important;
+    background-image: none !important;
+  }
 }
