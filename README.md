@@ -56,7 +56,7 @@ IE6等のサポートが必要ないなら、生成されるコードがシン�
 
 ### \_reset.scss
 
-[hail2u.net](http://hail2u.net/)で使用しているリセットCSｓをインポートすることができます。
+[hail2u.net](http://hail2u.net/)で使用しているリセットCSSをインポートすることができます。
 
 
 ### \_speech-bubble.scss
@@ -141,6 +141,21 @@ CSS Transformの`rotate(360deg)`で軽くぼかしがかかることを利用し
     
       font-family: "MS PMincho", serif;
     }
+
+
+### \_grid-overlay.scss
+
+ページ全体にグリッドのオーバーレイ画像をCSSグラデーションを利用して表示します。CSSグラデーションを利用しているためInternet Explorer 9以下やOpera 10以下では表示されません。
+
+    body {
+      @include grid-overlay(60px, 20px);
+    }
+
+
+#### 引数
+
+  1. `$column`: カラムの幅
+  2. `$gutter`: 溝(カラムとカラムの間)の幅
 
 
 LICENSE
