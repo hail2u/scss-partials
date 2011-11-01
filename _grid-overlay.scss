@@ -1,0 +1,60 @@
+@mixin grid-overlay($column: 48px, $gutter: 16px) {
+  &::before {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    content: "";
+    background-image: -moz-linear-gradient(
+      left,
+      rgb(255, 0, 255) 0,
+      rgb(255, 0, 255) ($column / 2),
+      transparent ($column / 2),
+      transparent ($column / 2 + $gutter),
+      rgb(255, 0, 255) ($column / 2 + $gutter),
+      rgb(255, 0, 255) ($column + $gutter)
+    );
+    background-image: -webkit-linear-gradient(
+      left,
+      rgb(255, 0, 255) 0,
+      rgb(255, 0, 255) ($column / 2),
+      transparent ($column / 2),
+      transparent ($column / 2 + $gutter),
+      rgb(255, 0, 255) ($column / 2 + $gutter),
+      rgb(255, 0, 255) ($column + $gutter)
+    );
+    background-image: -o-linear-gradient(
+      left,
+      rgb(255, 0, 255) 0,
+      rgb(255, 0, 255) ($column / 2),
+      transparent ($column / 2),
+      transparent ($column / 2 + $gutter),
+      rgb(255, 0, 255) ($column / 2 + $gutter),
+      rgb(255, 0, 255) ($column + $gutter)
+    );
+    background-image: -ms-linear-gradient(
+      left,
+      rgb(255, 0, 255) 0,
+      rgb(255, 0, 255) ($column / 2),
+      transparent ($column / 2),
+      transparent ($column / 2 + $gutter),
+      rgb(255, 0, 255) ($column / 2 + $gutter),
+      rgb(255, 0, 255) ($column + $gutter)
+    );
+    background-image: linear-gradient(
+      left,
+      rgb(255, 0, 255) 0,
+      rgb(255, 0, 255) ($column / 2),
+      transparent ($column / 2),
+      transparent ($column / 2 + $gutter),
+      rgb(255, 0, 255) ($column / 2 + $gutter),
+      rgb(255, 0, 255) ($column + $gutter)
+    );
+    background-size: ($column + $gutter) 1px;
+    background-position: 50% 0;
+    opacity: 0.05;
+    pointer-events: none;
+  }
+}
