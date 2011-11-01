@@ -29,3 +29,9 @@
   font-family: "MS PMincho", serif;
   font-size: 24px;
 }
+
+@import "grid-overlay";
+
+body {
+  @include grid-overlay(60px, 20px);
+}
