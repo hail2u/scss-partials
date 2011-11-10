@@ -90,6 +90,15 @@ textarea {
     font-family: sans-serif;
 }
 
+/* 
+ * Addresses 'hr' box-sizing inconsistency in Firefox
+ */
+
+hr {
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
 
 /* =============================================================================
    Links
