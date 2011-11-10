@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
-@import "reset";
 @import "natural";
+
 
 @import "speech-bubble";
 
@@ -21,6 +21,7 @@
   color: #000;
 }
 
+
 @import "utils";
 
 .fake-aa {
@@ -29,6 +30,7 @@
   font-family: "MS PMincho", serif;
   font-size: 24px;
 }
+
 
 @import "grid-overlay";
 
