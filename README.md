@@ -56,7 +56,7 @@ IE6等のサポートが必要ないなら、生成されるコードがシン�
 
 ### \_reset.scss
 
-[hail2u.net](http://hail2u.net/)で使用しているリセットCSSをインポートすることができます。
+[hail2u.net](http://hail2u.net/)で使用していたリセットCSSをインポートすることができます。
 
 
 ### \_speech-bubble.scss
@@ -156,6 +156,14 @@ CSS Transformの`rotate(360deg)`で軽くぼかしがかかることを利用し
 
   1. `$column`: カラムの幅
   2. `$gutter`: 溝(カラムとカラムの間)の幅
+
+
+### \_normalize.scss
+
+[Normalize.css](http://necolas.github.com/normalize.css/)をすこしカスタマイズしたものをインポートすることができます。オリジナルとの違いは以下の通りです。
+
+  * `hr`要素の`box-sizing`がFirefoxだけ違うことへの対処
+  * `nav ul`と`nav ol`で`list-style*`を消しているルールの削除
 
 
 LICENSE
