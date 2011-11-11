@@ -1,4 +1,4 @@
-@import "normalize";
+@import "normaliz";
 
 // Default variables
 $dark:       black !default;
@@ -12,7 +12,7 @@ $monospace:  "Menlo", "Andale Mono", monospace !default;
 
 // Sections
 body {
-  margin: ($font-size * 2);
+  margin: ($font-size * 4);
   color: $dark;
   background-color: $light;
   font: #{$font-size}/1.75 $sans-serif;
