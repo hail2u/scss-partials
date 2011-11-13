@@ -89,11 +89,12 @@ textarea {
 }
 
 /* 
- * Addresses 'hr' box-sizing inconsistency in Firefox
+ * Addresses box sizing set to border-box in Firefox (include -webkit to future-proof)
  */
 
 hr {
     -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
     box-sizing: content-box;
 }
 
