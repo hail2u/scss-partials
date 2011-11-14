@@ -247,7 +247,8 @@ dd {
     margin: 0 0 0 40px;
 }
 
-/* I don't like this rule
+/*
+ * No need to hide nav list's bullet or number
 nav ul,
 nav ol {
     list-style: none;
