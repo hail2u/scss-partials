@@ -1,57 +1,6 @@
 /* _normaliz.scss | http://unlicense.org/ */
 
 /* =============================================================================
-   HTML5 display definitions
-   ========================================================================== */
-
-/*
- * Corrects block display not defined in IE6/7/8/9 & FF3
- */
-
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-nav,
-section {
-    display: block;
-}
-
-/*
- * Corrects inline-block display not defined in IE6/7/8/9 & FF3
- */
-
-audio,
-canvas,
-video {
-    display: inline-block;
-    *display: inline;
-    *zoom: 1;
-}
-
-/*
- * Prevents modern browsers from displaying 'audio' without controls
- */
-
-audio:not([controls]) {
-    display: none;
-}
-
-/*
- * Addresses styling for 'hidden' attribute not present in IE7/8/9, FF3, S4
- * Known issue: no IE6 support
- */
-
-[hidden] {
-    display: none;
-}
-
-
-/* =============================================================================
    Base
    ========================================================================== */
 
@@ -132,12 +81,9 @@ a:active {
  * Neutralise smaller font-size in 'section' and 'article' in FF4+, Chrome, S5
  */
 
-/*
- * Respect browser's default behavior.
 h1 {
     font-size: 2em;
 }
-*/
 
 /*
  * Addresses styling not present in IE7/8/9, S5, Chrome
@@ -166,15 +112,6 @@ blockquote {
 
 dfn {
     font-style: italic;
-}
-
-/*
- * Addresses styling not present in IE6/7/8/9
- */
-
-mark {
-    background: #ff0;
-    color: #000;
 }
 
 /*
@@ -259,15 +196,6 @@ ol {
 dd {
     margin: 0 0 0 40px;
 }
-
-/*
- * No need to hide nav list's bullet or number
-nav ul,
-nav ol {
-    list-style: none;
-    list-style-image: none;
-}
-*/
 
 
 /* =============================================================================
