@@ -160,10 +160,7 @@ CSS Transformの`rotate(360deg)`で軽くぼかしがかかることを利用し
 
 ### \_normalize.scss
 
-[Normalize.css](http://necolas.github.com/normalize.css/)をすこしカスタマイズしたものをインポートすることができます。オリジナルとの違いは以下の通りです。
-
-  * `hr`要素の`box-sizing`がFirefoxだけ違うことへの対処
-  * `nav ul`と`nav ol`で`list-style*`を消しているルールの削除
+[normalize.css](http://necolas.github.com/normalize.css/)をインポートすることができます。
 
 
 LICENSE
