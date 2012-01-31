@@ -52,7 +52,7 @@
       rgb(255, 0, 255) ($column / 2 + $gutter),
       rgb(255, 0, 255) ($column + $gutter)
     );
-    background-size: ($column + $gutter) 1px;
+    background-size: ($column + $gutter);
     background-position: 50% 0;
     opacity: 0.05;
     pointer-events: none;
