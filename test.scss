@@ -36,4 +36,8 @@
 
 body {
   @include grid-overlay(60px, 20px);
+
+  margin-right: auto;
+  margin-left: auto;
+  width: 940px;
 }
