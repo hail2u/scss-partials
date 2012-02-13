@@ -1,7 +1,7 @@
 SCSS Partials
 =============
 
-SCCSファイルにインポートして使用する端切れ(partial)を放り込むリポジトリです。
+SCCSファイルでインポートして使用する端切れ(partial)を放り込むリポジトリです。
 
 
 USAGE
@@ -17,7 +17,7 @@ USAGE
 
 ### \_clearfix.scss
 
-clearfixを簡単に利用することができます。
+clearfixを適用することができます。
 
     header {
       @include clearfix;
@@ -32,7 +32,7 @@ IE6等のサポートが必要ないなら、生成されるコードがシン�
 
 ### \_emboss.scss
 
-`text-shadow`による軽いエンボスを手軽にかけることができます。
+文字に`text-shadow`による軽いエンボスをかけることができます。
 
    h1 {
      @include black-emboss();
@@ -61,7 +61,7 @@ IE6等のサポートが必要ないなら、生成されるコードがシン�
 
 ### \_speech-bubble.scss
 
-吹き出しのデザインを変更することができます。
+吹き出しを作ることができます。
 
     .speech-bubble {
       @include speech-bubble(#9cf, 6px, 12px, $24px);
@@ -131,6 +131,7 @@ IE6等のサポートが必要ないなら、生成されるコードがシン�
 ### \_utils.scss
 
 その他単機能のミックスインをインポートすることができます。
+
 
 #### fake-aa
 
