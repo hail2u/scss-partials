@@ -163,6 +163,12 @@ CSS Transformの`rotate(360deg)`で軽くぼかしがかかることを利用し
 [normalize.css](http://necolas.github.com/normalize.css/)をインポートすることができます。
 
 
+
+### \_context-reset.scss
+
+全てのプロパティーをその初期値にリセットすることができます。
+
+
 LICENSE
 -------
 
