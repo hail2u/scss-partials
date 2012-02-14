@@ -41,3 +41,10 @@ body {
   margin-left: auto;
   width: 940px;
 }
+
+
+@import "ellegant-button";
+
+.ellegant-button {
+  @include ellegant-button(#39c, #fff);
+}

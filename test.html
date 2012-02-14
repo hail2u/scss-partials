@@ -2,16 +2,20 @@
 <html>
   <head>
     <meta charset="utf-8">
+
     <title>Test for SCSS Partials</title>
+
     <link rel="stylesheet" href="test.css">
   </head>
   <body>
     <h1>Test for SCSS Partials</h1>
 
-    <h2>Speech Bubble</h2>
-    <p class="speech-bubble">Pure CSS speech bubble test.</p>
-    <pre>
-@import "speech-bubble";
+    <section>
+      <h2>Speech Bubble</h2>
+
+      <p class="speech-bubble">Pure CSS speech bubble test.</p>
+
+      <pre>@import "speech-bubble";
 
 .speech-bubble {
   @include speech-bubble(#9cf, 6px, 12px, 24px);
@@ -21,11 +25,14 @@
   color: #000;
 }
 </pre>
+    </section>
 
-    <h2>Bordered Speech Bubble</h2>
-    <p class="bordered-speech-bubble">Pure CSS bordered speech bubble test.</p>
-    <pre>
-@import "speech-bubble";
+    <section>
+      <h2>Bordered Speech Bubble</h2>
+
+      <p class="bordered-speech-bubble">Pure CSS bordered speech bubble test.</p>
+
+      <pre>@import "speech-bubble";
 
 .bordered-speech-bubble {
   @include bordered-speech-bubble(#9cf, #369, 4px, 8px, 16px, 24px);
@@ -35,11 +42,14 @@
   color: #000;
 }
 </pre>
+    </section>
 
-    <h2>Fake Anti-Aliasing for Google Chrome</h2>
-    <p class="fake-aa">散りぬるを我が世誰ぞ常ならむ</p>
-    <pre>
-@import "utils";
+    <section>
+      <h2>Fake Anti-Aliasing for Google Chrome</h2>
+
+      <p class="fake-aa">散りぬるを我が世誰ぞ常ならむ</p>
+
+      <pre>@import "utils";
 
 .fake-aa {
   @include fake-aa;
@@ -48,14 +58,32 @@
   font-size: 24px;
 }
 </pre>
+    </section>
 
-    <h2>Grid Overlay</h2>
-    <pre>
-@import "grid-overlay";
+    <section>
+      <h2>Grid Overlay</h2>
+
+      <pre>@import "grid-overlay";
 
 body {
   @include grid-overlay(60px, 20px);
 }
 </pre>
+    </section>
+
+    <section>
+      <h2>Ellegant Button</h2>
+
+      <p><a href="#" class="ellegant-button">Ellegant Button</a> (<code>a</code> element)</p>
+
+      <p><button class="ellegant-button">Ellegant Button</button> (<code>button</code> element)</p>
+
+      <pre>@import "ellegant-button";
+
+.ellegant-button {
+  @include ellegant-button(#39c, #fff);
+}
+</pre>
+    </section>
   </body>
 </html>
