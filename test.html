@@ -85,5 +85,25 @@ body {
 }
 </pre>
     </section>
+
+    <section>
+      <h2>Image Replacement</h2>
+
+      <p class="ir">Lorem ipsum dolor sit amet.</p>
+
+      <pre>@import "image-replacement";
+
+.ir {
+  @include ir-text-indent;
+
+  width: 72px;
+  height: 72px;
+  background-image: url("ir.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+</pre>
+    </section>
   </body>
 </html>
