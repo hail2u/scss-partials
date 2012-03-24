@@ -1,15 +1,15 @@
 @mixin clearfix {
   zoom: 1;
 
-  &::before,
-  &::after {
+  &:before,
+  &:after {
     display: block; 
     height: 0; 
     visibility: hidden; 
     content: "\0020"; 
   }
 
-  &::after {
+  &:after {
     clear: both;
   }
 }
@@ -17,7 +17,7 @@
 @mixin miniclearfix {
   zoom: 1;
 
-  &::after {
+  &:after {
     display: block; 
     clear: both;
     content: ""; 
@@ -27,13 +27,13 @@
 @mixin microclearfix {
   zoom: 1;
 
-  &::before,
-  &::after {
+  &:before,
+  &:after {
     display: table;
     content: "";
   }
 
-  &::after {
+  &:after {
     clear: both;
   }
 }

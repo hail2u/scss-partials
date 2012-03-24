@@ -1,5 +1,5 @@
 @mixin grid-overlay($column: 48px, $gutter: 16px) {
-  &::before {
+  &:before {
     position: fixed;
     top: 0;
     right: 0;

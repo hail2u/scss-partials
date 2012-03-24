@@ -120,7 +120,7 @@ img.alignleft {
 * + html .group {
 	display: inline-block;
 }
-.group::after {
+.group:after {
 	content: ".";
 	display: block;
 	height: 0;
