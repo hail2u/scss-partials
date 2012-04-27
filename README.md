@@ -128,12 +128,7 @@ IE6等のサポートが必要ないなら、生成されるコードがシン�
 [YUI 3のCSS Reset](http://developer.yahoo.com/yui/3/cssreset/)をインポートすることができます。
 
 
-### \_utils.scss
-
-その他単機能のミックスインをインポートすることができます。
-
-
-#### fake-aa
+### \_fake-aa.scss
 
 CSS Transformの`rotate(360deg)`で軽くぼかしがかかることを利用して、Google Chromeでフォントがギザギザに見えることがある問題への対処を行います。
 
