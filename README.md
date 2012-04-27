@@ -164,12 +164,12 @@ CSS Transformの`rotate(360deg)`で軽くぼかしがかかることを利用し
 全てのプロパティーをその初期値にリセットすることができます。
 
 
-### \_ellegant-button.scss
+### \_elegant-button.scss
 
 少しグラデーションのかかったきれいなボタンを作ることができます。
 
-    .ellegant-button {
-      @include ellegant-button(#39c, #fff);
+    .elegant-button {
+      @include elegant-button(#39c, #fff);
     }
 
 
