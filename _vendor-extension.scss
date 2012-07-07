@@ -45,6 +45,31 @@
   transform-origin: $origin;
 }
 
+@mixin transform-style($style) {
+  -moz-transform-style: $style;
+  -webkit-transform-style: $style;
+  -ms-transform-style: $style;
+  transform-style: $style;
+}
+
+@mixin perspective($depth) {
+  -moz-perspective: $depth;
+  -webkit-perspective: $depth;
+  perspective: $depth;
+}
+
+@mixin perspective-origin($origin) {
+  -moz-perspective-origin: $origin;
+  -webkit-perspective-origin: $origin;
+  perspective-origin: $origin;
+}
+
+@mixin backface-visibility($visibility) {
+  -moz-backface-visibility: $visibility;
+  -webkit-backface-visibility: $visibility;
+  backface-visibility: $visibility;
+}
+
 @mixin transition($transition) {
   -moz-transition: $transition;
   -webkit-transition: $transition;
