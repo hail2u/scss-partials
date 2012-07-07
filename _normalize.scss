@@ -68,7 +68,7 @@ html {
     -ms-text-size-adjust: 100%; /* 2 */
 }
 
-/* 
+/*
  * Addresses font-family inconsistency between 'textarea' and other form elements.
  */
 
@@ -136,9 +136,9 @@ abbr[title] {
  * Addresses style set to 'bolder' in FF3+, S4/5, Chrome
 */
 
-b, 
-strong { 
-    font-weight: bold; 
+b,
+strong {
+    font-weight: bold;
 }
 
 blockquote {
@@ -268,7 +268,7 @@ img {
 }
 
 /*
- * Corrects overflow displayed oddly in IE9 
+ * Corrects overflow displayed oddly in IE9
  */
 
 svg:not(:root) {
@@ -313,7 +313,7 @@ fieldset {
 
 /*
  * 1. Corrects color not being inherited in IE6/7/8/9
- * 2. Corrects text not wrapping in FF3 
+ * 2. Corrects text not wrapping in FF3
  * 3. Corrects alignment displayed oddly in IE6/7
  */
 
@@ -357,8 +357,8 @@ input {
  */
 
 button,
-input[type="button"], 
-input[type="reset"], 
+input[type="button"],
+input[type="reset"],
 input[type="submit"] {
     cursor: pointer; /* 1 */
     -webkit-appearance: button; /* 2 */
@@ -427,7 +427,7 @@ textarea {
    Tables
    ========================================================================== */
 
-/* 
+/*
  * Remove most spacing between table cells
  */
 
