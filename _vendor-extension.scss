@@ -1,31 +1,5 @@
-@mixin background-origin($area) {
-  -moz-background-origin: $area;
-  -webkit-background-origin: $area;
-  background-origin: $area;
-}
-
-@mixin background-size($size) {
-  -moz-background-size: $size;
-  -webkit-background-size: $size;
-  -o-background-size: $size;
-  background-size: $size;
-}
-
-@mixin border-radius($size) {
-  -moz-border-radius: $size;
-  -webkit-border-radius: $size;
-  border-radius: $size;
-}
-
-@mixin box-shadow($shadow) {
-  -moz-box-shadow: $shadow;
-  -webkit-box-shadow: $shadow;
-  box-shadow: $shadow;
-}
-
 @mixin box-sizing($model) {
   -moz-box-sizing: $model;
-  -webkit-box-sizing: $model;
   box-sizing: $model;
 }
 
