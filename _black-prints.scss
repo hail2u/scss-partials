@@ -1,6 +1,7 @@
 @mixin black-prints {
   * {
-    box-shadow:none !important;
+    border-color: currentColor !important;
+    box-shadow: none !important;
     color: black !important;
     background: transparent !important;
     text-shadow: none !important;
