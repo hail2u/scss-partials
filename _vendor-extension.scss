@@ -91,11 +91,11 @@
   transition-duration: $duration;
 }
 
-@mixin transition-function($function) {
-  -moz-transition-function: $function;
-  -webkit-transition-function: $function;
-  -o-transition-function: $duration;
-  transition-function: $duration;
+@mixin transition-timing-function($function) {
+  -moz-transition-timing-function: $function;
+  -webkit-transition-timing-function: $function;
+  -o-transition-timing-function: $duration;
+  transition-timing-function: $duration;
 }
 
 @mixin transition-delay($delay) {
