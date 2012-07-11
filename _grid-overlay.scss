@@ -34,15 +34,6 @@
       rgb(255, 0, 255) ($column / 2 + $gutter),
       rgb(255, 0, 255) ($column + $gutter)
     );
-    background-image: -ms-linear-gradient(
-      left,
-      rgb(255, 0, 255) 0,
-      rgb(255, 0, 255) ($column / 2),
-      transparent ($column / 2),
-      transparent ($column / 2 + $gutter),
-      rgb(255, 0, 255) ($column / 2 + $gutter),
-      rgb(255, 0, 255) ($column + $gutter)
-    );
     background-image: linear-gradient(
       left,
       rgb(255, 0, 255) 0,
