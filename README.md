@@ -91,17 +91,17 @@ IE6等のサポートが必要ないなら、生成されるコードがシン�
 
 ベンダー拡張プロパティとCSS3でのプロパティを一括指定することができます。
 
-  * background-origin
-  * background-size
-  * border-radius
-  * box-shadow
   * box-sizing
   * transform
   * transform-origin
+  * transform-style
+  * perspective
+  * perspective-origin
+  * backface-visibility
   * transition
   * transition-property
   * transition-duration
-  * transition-function
+  * transition-timing-function
   * transition-delay
 
 値の指定はCSS3の仕様に従います。
