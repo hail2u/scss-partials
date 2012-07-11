@@ -158,8 +158,10 @@ table {
 // For printing
 @media print {
   * {
+    box-shadow: none !important;
     color: black !important;
     background-color: transparent !important;
     background-image: none !important;
+    text-shadow: none !important;
   }
 }
