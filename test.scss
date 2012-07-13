@@ -62,3 +62,14 @@ body {
   background-position: center center;
   background-size: contain;
 }
+
+
+@import "selection";
+
+::-moz-selection {
+  @include selection(#fff, #000);
+}
+
+::selection {
+  @include selection(#fff, #000);
+}

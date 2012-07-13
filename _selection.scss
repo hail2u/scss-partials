@@ -1,0 +1,5 @@
+@mixin selection($selection-foreground: #fff, $selection-background: #39f) {
+  color: $selection-foreground;
+  background-color: $selection-background;
+  text-shadow: none;
+}
