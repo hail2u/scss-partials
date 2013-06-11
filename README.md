@@ -189,6 +189,29 @@ CSS Transformの`rotate(360deg)`で軽くぼかしがかかることを利用し
 印刷向けに文字色や背景色をモノクロにリセットするためのスタイルを導入できます。印刷向けスタイルシートをインラインで埋め込む時に役に立ちます。
 
 
+### \_corpolate-colors.scss
+
+様々な企業のコーポレートカラーを手軽に参照できます。
+
+
+### \_selection.scss
+
+選択した時のスタイルをまとめて指定出来ます。
+
+    ::-moz-selection {
+      @include selection(#fff, #369);
+    }
+    
+    ::selection {
+      @include selection(#fff, #369);
+    }
+
+
+### \_lego-colors.scss
+
+レゴブロックのカラースキームを手軽に参照できます。
+
+
 LICENSE
 -------
 
