@@ -1,4 +1,5 @@
 @mixin ir-text-indent {
+  direction: ltr;
   text-indent: -9999px;
 }
 
