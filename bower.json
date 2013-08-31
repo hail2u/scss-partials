@@ -1,0 +1,10 @@
+{
+  "name": "hail2u-scss-partials",
+  "version": "1.0.0",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "components"
+  ]
+}
