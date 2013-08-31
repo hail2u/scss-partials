@@ -4,6 +4,16 @@ SCSS Partials
 SCCSファイルでインポートして使用する端切れ(partial)を放り込むリポジトリです。
 
 
+INSTALLATION
+------------
+
+Three options are available:
+
+  1. [Download package][1]
+  2. Clone with Git: `$ git clone https://github.com/hail2u/scss-partials.git`
+  3. Install with [Bower][2]: `$ bower install --save-dev hail2u-scss-partials`
+
+
 USAGE
 -----
 
@@ -41,12 +51,12 @@ IE6等のサポートが必要ないなら、生成されるコードがシン�
 
 ### \_meyerweb-reset.scss
 
-[meyerwebで公開されているReset CSS](http://meyerweb.com/eric/tools/css/reset/)をインポートすることができます。
+[meyerwebで公開されているReset CSS][3]をインポートすることができます。
 
 
 ### \_natural.scss
 
-[結局どうすればいいの？ - Dive Into HTML5](http://hail2u.net/documents/diveintohtml5-semantics.html)などで使われているシンプルなスタイルをインポートすることができます。文字や背景、リンクなどの色やフォントサイズ等の設定を変更することも可能です。
+[結局どうすればいいの？ - Dive Into HTML5][4]などで使われているシンプルなスタイルをインポートすることができます。文字や背景、リンクなどの色やフォントサイズ等の設定を変更することも可能です。
 
     $link: green;
     $font-size: 12px;
@@ -56,7 +66,7 @@ IE6等のサポートが必要ないなら、生成されるコードがシン�
 
 ### \_reset.scss
 
-[hail2u.net](http://hail2u.net/)で使用していたリセットCSSをインポートすることができます。
+[hail2u.net][5]で使用していたリセットCSSをインポートすることができます。
 
 
 ### \_speech-bubble.scss
@@ -84,7 +94,7 @@ IE6等のサポートが必要ないなら、生成されるコードがシン�
 
 ### \_vanilla.scss
 
-[Vanilla CSS Un-Reset](http://noscope.com/vanilla-css)をインポートすることができます。
+[Vanilla CSS Un-Reset][6]をインポートすることができます。
 
 
 ### \_vendor-extension.scss
@@ -109,12 +119,12 @@ IE6等のサポートが必要ないなら、生成されるコードがシン�
 
 ### \_yui-base-min.scss
 
-[YUI 3のCSS Base](http://developer.yahoo.com/yui/3/cssbase/)をインポートすることができます。
+[YUI 3のCSS Base][7]をインポートすることができます。
 
 
 ### \_yui-fonts-min.scss
 
-[YUI 3のCSS Fonts](http://developer.yahoo.com/yui/3/cssfonts/)をインポートすることができます。インポートしたドキュメントでは変数を使ってフォントサイズの変更が行えます。
+[YUI 3のCSS Fonts][8]をインポートすることができます。インポートしたドキュメントでは変数を使ってフォントサイズの変更が行えます。
 
     h1 {
       font-size: $yui-24px;
@@ -125,7 +135,7 @@ IE6等のサポートが必要ないなら、生成されるコードがシン�
 
 ### \_yui-reset-min.scss
 
-[YUI 3のCSS Reset](http://developer.yahoo.com/yui/3/cssreset/)をインポートすることができます。
+[YUI 3のCSS Reset][9]をインポートすることができます。
 
 
 ### \_fake-aa.scss
@@ -156,7 +166,7 @@ CSS Transformの`rotate(360deg)`で軽くぼかしがかかることを利用し
 
 ### \_normalize.scss
 
-[normalize.css](http://necolas.github.com/normalize.css/)をインポートすることができます。
+[normalize.css][10]をインポートすることができます。
 
 
 ### \_context-reset.scss
@@ -215,4 +225,17 @@ CSS Transformの`rotate(360deg)`で軽くぼかしがかかることを利用し
 LICENSE
 -------
 
-SCSSファイルにライセンス条項が明記されていない限りすべて[パブリック・ドメイン](http://unlicense.org/)として提供されています。
+SCSSファイルにライセンス条項が明記されていない限りすべて[パブリック・ドメイン][11]として提供されています。
+
+
+[1]:  https://github.com/hail2u/scss-partials/archive/master.zip
+[2]:  http://bower.io/
+[3]:  https://github.com/hail2u/scss-column-equation.git
+[4]:  http://hail2u.net/documents/diveintohtml5-semantics.html
+[5]:  http://hail2u.net/
+[6]:  http://noscope.com/vanilla-css
+[7]:  http://developer.yahoo.com/yui/3/cssbase/
+[8]:  http://developer.yahoo.com/yui/3/cssfonts/
+[9]:  http://developer.yahoo.com/yui/3/cssreset/
+[10]: http://necolas.github.com/normalize.css/
+[11]: http://unlicense.org/
