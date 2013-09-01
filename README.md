@@ -237,5 +237,5 @@ SCSSファイルにライセンス条項が明記されていない限りすべ�
 [7]:  http://developer.yahoo.com/yui/3/cssbase/
 [8]:  http://developer.yahoo.com/yui/3/cssfonts/
 [9]:  http://developer.yahoo.com/yui/3/cssreset/
-[10]: http://necolas.github.com/normalize.css/
+[10]: http://necolas.github.io/normalize.css/
 [11]: http://unlicense.org/
