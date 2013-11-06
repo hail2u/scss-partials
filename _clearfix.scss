@@ -37,3 +37,17 @@
     clear: both;
   }
 }
+
+@mixin microclearfix_block {
+  zoom: 1;
+
+  &:before,
+  &:after {
+    display: block;
+    content: "";
+  }
+
+  &:after {
+    clear: both;
+  }
+}
