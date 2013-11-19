@@ -1,6 +1,6 @@
 {
   "name": "hail2u-scss-partials",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "ignore": [
     "**/.*",
     "node_modules",
