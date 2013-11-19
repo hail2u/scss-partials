@@ -12,10 +12,18 @@ $monospace:  "Menlo", "Andale Mono", monospace !default;
 
 // Sections
 body {
-  margin: ($font-size * 4);
+  margin: ($font-size * 2) $font-size;
   color: $dark;
   background-color: $light;
   font: #{$font-size}/1.75 $sans-serif;
+
+  @media (min-width: ($font-size * 28)) {
+    margin: ($font-size * 2);
+  }
+
+  @media (min-width: ($font-size * 52)) {
+    margin-top: ($font-size * 4);
+  }
 }
 
 h1,
