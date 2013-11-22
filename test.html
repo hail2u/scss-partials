@@ -105,5 +105,21 @@ body {
 }
 </pre>
     </section>
+
+    <section>
+      <h2>Centering</h2>
+
+      <div class="centering-container"><div class="centered-hv"></div></div>
+
+      <pre>@import "centering";
+
+.centered-hv {
+  @include centering-known();
+
+  width: 80px;
+  height: 80px;
+  background-color: #369;
+}
+    </section>
   </body>
 </html>

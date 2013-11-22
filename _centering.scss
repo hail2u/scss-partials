@@ -1,0 +1,40 @@
+@mixin centering-known($horizontal: 1, $vertical: 1) {
+  margin: auto;
+  position: absolute;
+
+  @if $horizontal == 1 {
+    right: 0;
+    left: 0;
+  }
+
+  @if $vertical == 1 {
+    top: 0;
+    bottom: 0;
+  }
+}
+
+@mixin centering-unknown($horizontal: 1, $vertical: 1) {
+  @if $horizontal {
+    text-align: center;
+  }
+
+  @if $vertical == 1 {
+    &:before {
+      margin-right: -0.25em;
+      display: inline-block;
+      height: 100%;
+      vertical-align: middle;
+      content: "";
+    }
+  }
+
+  *:first-child:last-child {
+    @if $horizontal {
+      display: inline-block;
+    }
+
+    @if $vertical == 1 {
+      vertical-align: middle;
+    }
+  }
+}

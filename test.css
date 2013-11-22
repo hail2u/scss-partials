@@ -582,3 +582,19 @@ body:before {
   color: white;
   background-color: black;
   text-shadow: none; }
+
+.centering-container {
+  position: relative;
+  height: 320px;
+  background-color: #def; }
+
+.centered-hv {
+  margin: auto;
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 80px;
+  height: 80px;
+  background-color: #369; }

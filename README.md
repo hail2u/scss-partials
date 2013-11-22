@@ -222,6 +222,28 @@ CSS Transformの`rotate(360deg)`で軽くぼかしがかかることを利用し
 レゴブロックのカラースキームを手軽に参照できます。
 
 
+### \_centering.scss
+
+縦方向または横方向、及び両方向に中央揃えすることができます。
+
+    .centered-hv {
+      @include centering-known();
+    
+      width: 80px;
+      height: 80px;
+    }
+
+`width`と`height`プロパティーは必須です。ウィンドウではなく親要素のサイズを基準に中央揃えしたい場合は、親要素に`position: relative`が必要になります。
+
+`centering-unknown`というミックスインもありますが実験段階で、上手く動かないかもしれません。
+
+
+#### 引数
+
+  1. `$horizontal`: 横方向に中央揃えするかどうか
+  2. `$vertical`: 縦方向に中央揃えするかどうか
+
+
 LICENSE
 -------
 
