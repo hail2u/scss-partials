@@ -206,7 +206,7 @@ CSS Transformの`rotate(360deg)`で軽くぼかしがかかることを利用し
 
 ### \_selection.scss
 
-選択した時のスタイルをまとめて指定出来ます。
+選択した時のスタイルをまとめて指定できます。
 
     ::-moz-selection {
       @include selection(#fff, #369);
