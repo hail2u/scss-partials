@@ -4,6 +4,7 @@
   "ignore": [
     "**/.*",
     "bower.json",
+    "tmp",
     "test.*"
   ]
 }
