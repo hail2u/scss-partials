@@ -1,9 +1,9 @@
 @charset "UTF-8";
 
-@import "natural";
+@import "../natural";
 
 
-@import "speech-bubble";
+@import "../speech-bubble";
 
 .speech-bubble {
   @include speech-bubble(#9cf, 6px, 12px, 24px);
@@ -22,7 +22,7 @@
 }
 
 
-@import "fake-aa";
+@import "../fake-aa";
 
 .fake-aa {
   @include fake-aa;
@@ -32,7 +32,7 @@
 }
 
 
-@import "grid-overlay";
+@import "../grid-overlay";
 
 body {
   @include grid-overlay(60px, 20px);
@@ -45,14 +45,14 @@ body {
 }
 
 
-@import "elegant-button";
+@import "../elegant-button";
 
 .elegant-button {
   @include elegant-button(#39c, #fff);
 }
 
 
-@import "image-replacement";
+@import "../image-replacement";
 
 .ir {
   @include ir-text-indent;
@@ -66,7 +66,7 @@ body {
 }
 
 
-@import "selection";
+@import "../selection";
 
 ::-moz-selection {
   @include selection(#fff, #000);
@@ -77,7 +77,7 @@ body {
 }
 
 
-@import "centering";
+@import "../centering";
 
 .centering-container {
   position: relative;
