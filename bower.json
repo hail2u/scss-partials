@@ -1,10 +1,10 @@
 {
   "name": "hail2u-scss-partials",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "ignore": [
     "**/.*",
     "bower.json",
-    "tmp",
-    "test"
+    "test",
+    "tmp"
   ]
 }
