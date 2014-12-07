@@ -59,7 +59,7 @@
 }
 
 @mixin font-feature-settings($features...) {
-  -moz-box-sizing: $features;
-  -webkit-box-sizing: $features;
-  box-sizing: $features;
+  -moz-font-feature-settings: $features;
+  -webkit-font-feature-settings: $features;
+  font-feature-settings: $features;
 }
