@@ -1,7 +1,7 @@
 {
   "name": "hail2u-scss-partials",
   "description": "SCCSファイルでインポートして使用する端切れ(partial)を放り込むリポジトリです。",
-  "version": "1.2.5",
+  "version": "1.2.6",
   "author": "Kyo Nagashima <hail2u@gmail.com> (https://kyonagashima.com/)",
   "bugs": {
     "url": "https://github.com/hail2u/scss-partials/issues"
