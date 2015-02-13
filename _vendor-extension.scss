@@ -4,31 +4,37 @@
 }
 
 @mixin transform($func) {
+  -ms-transform: $func;
   -webkit-transform: $func;
   transform: $func;
 }
 
 @mixin transform-origin($origin) {
+  -ms-transform-origin: $origin;
   -webkit-transform-origin: $origin;
   transform-origin: $origin;
 }
 
 @mixin transform-style($style) {
+  -ms-transform-style: $style;
   -webkit-transform-style: $style;
   transform-style: $style;
 }
 
 @mixin perspective($depth) {
+  -ms-perspective: $depth;
   -webkit-perspective: $depth;
   perspective: $depth;
 }
 
 @mixin perspective-origin($origin) {
+  -ms-perspective-origin: $origin;
   -webkit-perspective-origin: $origin;
   perspective-origin: $origin;
 }
 
 @mixin backface-visibility($visibility) {
+  -ms-backface-visibility: $visibility;
   -webkit-backface-visibility: $visibility;
   backface-visibility: $visibility;
 }
@@ -59,7 +65,6 @@
 }
 
 @mixin font-feature-settings($features...) {
-  -moz-font-feature-settings: $features;
   -webkit-font-feature-settings: $features;
   font-feature-settings: $features;
 }
