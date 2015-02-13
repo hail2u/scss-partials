@@ -63,3 +63,9 @@
   -webkit-font-feature-settings: $features;
   font-feature-settings: $features;
 }
+
+@mixin text-decoration-color($color) {
+  -moz-text-decoration-color: $color;
+  -webkit-text-decoration-color: $color;
+  text-decoration-color: $color;
+}
