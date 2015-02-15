@@ -1,21 +1,21 @@
-@import "normalize";
+@import 'normalize';
 
 // Default variables
-$dark:       black !default;
-$light:      white !default;
-$link:       blue !default;
-$stress:     red !default;
+$dark:       #000 !default;
+$light:      #fff !default;
+$link:       #00f !default;
+$stress:     #f00 !default;
 $font-size:  16px !default;
-$sans-serif: "Helvetica", "Arial", sans-serif !default;
-$monospace:  "Menlo", "Andale Mono", monospace !default;
+$sans-serif: 'Helvetica', 'Arial', sans-serif !default;
+$monospace:  'Menlo', 'Andale Mono', monospace !default;
 
 
 // Sections
 body {
-  margin: ($font-size * 2) $font-size;
-  color: $dark;
   background-color: $light;
+  color: $dark;
   font: #{$font-size}/1.75 $sans-serif;
+  margin: ($font-size * 2) $font-size;
 
   @media (min-width: ($font-size * 28)) {
     margin: ($font-size * 2);
@@ -32,30 +32,30 @@ h3,
 h4,
 h5,
 h6 {
-  margin: ($font-size * 2) 0 0 0;
+  margin: ($font-size * 2) 0 0;
 }
 
 
 // Grouping content
 p {
-  margin: ($font-size * 2) 0 0 0;
+  margin: ($font-size * 2) 0 0;
 }
 
 hr {
-  margin: ($font-size * 2) auto 0 auto;
-  border-top: none;
-  border-right: none;
   border-bottom: 3px double darken($light, 30%);
-  border-left: none;
-  width: 50%;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
   height: 0;
+  margin: ($font-size * 2) auto 0;
+  width: 50%;
 }
 
 pre {
-  margin: ($font-size * 2) 0 0 0;
-  padding: $font-size;
   background-color: darken($light, 3%);
-  font: #{($font-size * 0.875)}/1.25 $monospace;
+  font: #{($font-size * .875)}/1.25 $monospace;
+  margin: ($font-size * 2) 0 0;
+  padding: $font-size;
 }
 
 blockquote {
@@ -64,7 +64,7 @@ blockquote {
 
 ol,
 ul {
-  margin: ($font-size * 2) 0 0 0;
+  margin: ($font-size * 2) 0 0;
   padding-left: ($font-size * 2.5);
 
   ol,
@@ -74,7 +74,7 @@ ul {
 }
 
 dl {
-  margin: ($font-size * 2) 0 0 0;
+  margin: ($font-size * 2) 0 0;
 
   dd {
     margin-left: ($font-size * 2.5);
@@ -102,11 +102,11 @@ strong {
 }
 
 q:before {
-  content: "\201C\0020";
+  content: '\201C\0020';
 }
 
 q:after {
-  content: "\0020\201D";
+  content: '\0020\201D';
 }
 
 abbr,
@@ -134,32 +134,34 @@ del {
 
 
 // Embedded content
+@import 'vendor-extension';
+
 img {
-  max-width: 100%;
+  @include box-sizing(border-box);
+
   height: auto;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+  max-width: 100%;
 }
 
 
 // Tabular data
 table {
-  margin: ($font-size * 2) 0 0 0;
+  margin: ($font-size * 2) 0 0;
 
   th {
-    padding: ($font-size / 2);
+    background-color: darken($light, 15%);
     border: 1px solid darken($light, 45%);
     color: $dark;
-    background-color: darken($light, 15%);
     font-weight: bold;
+    padding: ($font-size / 2);
     text-align: left;
   }
 
   td {
-    padding: ($font-size / 2);
+    background-color: darken($light, 3%);
     border: 1px solid darken($light, 45%);
     color: $dark;
-    background-color: darken($light, 3%);
+    padding: ($font-size / 2);
   }
 }
 
@@ -167,10 +169,10 @@ table {
 // For printing
 @media print {
   * {
-    box-shadow: none !important;
-    color: black !important;
     background-color: transparent !important;
     background-image: none !important;
+    box-shadow: none !important;
+    color: #000 !important;
     text-shadow: none !important;
   }
 }
