@@ -6,17 +6,12 @@
   "bugs": {
     "url": "https://github.com/hail2u/scss-partials/issues"
   },
-  "files": [
-    "*.scss",
-    "README.md",
-    "package.json"
-  ],
   "homepage": "https://github.com/hail2u/scss-partials",
   "keywords": [
-    "sass",
-    "scss",
+    "css",
     "partial",
-    "css"
+    "sass",
+    "scss"
   ],
   "license": "Unlicense",
   "repository": {
